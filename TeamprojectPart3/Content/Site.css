@@ -22,7 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
-<h1 > {
+h1  {
     color: blue;
 
 }
@@ -30,3 +30,9 @@ h2 {
     color: darkred;
 
 }
+
+p {
+    color: green;
+
+}
+
