@@ -21,11 +21,17 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("homepage", "homepage", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Catalog", "Index", "buys")</li>
-                </ul>
+                    <li>@Html.ActionLink("ShoppingCart", "ShoppingCart", "Home")</li>
+                    <!--THis part is used for the checkout page so when a user is logged in you can see the page in teh navbar-->
+                                        @if (Context.User.Identity.IsAuthenticated)
+                                        {
+                                            
+                                            <li>@Html.ActionLink("Checkout", "checkout", "Home")</li>}
+</ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>

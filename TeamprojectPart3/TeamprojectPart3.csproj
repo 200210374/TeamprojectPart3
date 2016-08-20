@@ -255,6 +255,8 @@
     <Content Include="Views\productDetails\Index.cshtml" />
     <Content Include="Views\Home\ProductDetails.cshtml" />
     <Content Include="Views\Home\ShoppingCart.cshtml" />
+    <Content Include="Views\Home\checkout.cshtml" />
+    <Content Include="Views\Home\homepage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

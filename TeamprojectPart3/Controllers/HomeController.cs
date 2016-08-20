@@ -34,5 +34,27 @@ namespace TeamprojectPart3.Controllers
             return View();
         }
 
+
+        public ActionResult checkout()
+        {
+            ViewBag.Message = "Checkout";
+
+            return View();
+        }
+
+        public ActionResult homepage()
+        {
+            ViewBag.Message = "Welcome";
+
+            return View();
+        }
+
+        public ActionResult ShoppingCart()
+        {
+            
+
+            return View();
+        }
+
     }
 }
