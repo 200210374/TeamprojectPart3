@@ -1,5 +1,5 @@
 ﻿@{
-   
+
 }
 
 <!DOCTYPE html>
@@ -11,9 +11,21 @@
 </head>
 <body>
     <div>
-    <h2>Your orders</h2>
+        <h2>Your orders</h2>
 
 
+
+        <!--If user is authenticated the checkout button will show-->
+        @if (Context.User.Identity.IsAuthenticated)
+        {
+
+
+
+            <p><a href="checkout" class="btn btn-primary btn-lg">Checkout &raquo;</a></p>
+        }
+
+
+    
     </div>
 </body>
 </html>

@@ -56,5 +56,12 @@ namespace TeamprojectPart3.Controllers
             return View();
         }
 
+
+        public ActionResult final()
+        {
+
+
+            return View();
+        }
     }
 }
